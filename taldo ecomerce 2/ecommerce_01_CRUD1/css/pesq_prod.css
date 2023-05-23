@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;800&family=Signika+Negative:wght@500&display=swap');
+
+.table {
+    width: 1600px;
+    display: grid;
+}
+
+.row {
+    display: block;
+}
+
+.cell {
+    display: inline-block;
+    padding: 5px 5px;
+    margin-bottom: .5%;
+    background-color: rgb(185, 92, 197);
+    color: white;
+    font-size: 10pt;
+    border: solid 2px black;
+    font-family: 'Poppins', sans-serif;
+    transition: 200ms;
+}
+
+.cell a{
+    text-decoration: underline;
+    color: white;
+}
+
+.cellHeader {
+    text-align: center !important;
+    background-color:rgb(116, 53, 124);
+}
+
+.cellCodigo {
+    width: 100px;
+}
+
+.cellDescricao {
+    width: 300px;
+}
+
+.cellPrecoHeader {
+    width: 100px;
+}
+
+.cellPreco {
+    width: 100px;
+}
+
+.cellAcoes {
+    width: 100px;
+    background-color:rgb(116, 53, 124);
+}
+
+.cellAcoes a:hover{
+     color: black;   
+}
+
+.novoProd{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    color: white;
+    background-color: rgb(185, 92, 197);
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.novoProd:hover{
+    color: rgb(185, 92, 197);
+    background-color: white;
+}
+
+.dark-mode .cell{
+    background-color: gray;
+    border: solid 2px white;
+}
+
+.dark-mode .cellHeader, .dark-mode .cellAcoes{
+    background-color: rgb(85, 85, 85);
+}
+
+.dark-mode .novoProd{
+    background-color: gray;
+}
+
+.dark-mode .novoProd:hover{
+    color: gray;
+    background-color: white;
+}

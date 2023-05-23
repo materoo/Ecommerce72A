@@ -1,0 +1,94 @@
+:root {
+    /* Modo Claro*/
+    --light-switch-shadow: #171332;
+    --light-switch-icon: "🌙";
+    --light-text: #2a5d67;
+    --light-bg: #eeeeee;
+    --light-theme: #4ae3b5;
+
+    /* Modo Escuro */
+    --dark-switch-shadow: #f78536;
+    --dark-switch-icon: "☀️";
+    --dark-text: #dfebed;
+    --dark-bg: #2b4450;
+    --dark-theme: #497285;
+
+    /* Modo Padrão (Claro) */
+    --switch-shadow-color: var(--light-switch-shadow);
+    --switch-icon: var(--light-switch-icon);
+    --switch-text: var(--light-switch-text);
+    --text-color: var(--light-text);
+    --bg-color: var(--light-bg);
+    --theme-color: var(--light-theme);
+}
+
+/* Trocando o modo quando o checkbox é marcado */
+.theme-switch:checked~#pagina {
+    --switch-shadow-color: var(--dark-switch-shadow);
+    --switch-icon: var(--dark-switch-icon);
+    --switch-text: var(--dark-switch-text);
+    --text-color: var(--dark-text);
+    --bg-color: var(--dark-bg);
+    --theme-color: var(--dark-theme);
+}
+
+/* Theme switcher */
+/* ocultar o checkbox */
+.theme-switch {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.switch-label {
+    cursor: pointer;
+    display: flex;
+}
+
+.switch-label::before {
+    content: var(--switch-icon);
+    font-size: 20px;
+    transition: text-shadow .2s;
+}
+
+.switch-label::after {
+    align-self: center;
+    content: var(--switch-text);
+    color: var(--switch-shadow-color);
+    font-size: 20px;
+    line-height: 20px;
+    opacity: 0;
+    padding-left: 15px;
+    transition: opacity .2s;
+}
+
+.theme-switch:focus~#pagina .switch-label::before,
+.switch-label:hover::before {
+    text-shadow: 0 0 15px var(--switch-shadow-color);
+}
+
+.theme-switch:focus~#pagina .switch-label::after,
+.switch-label:hover::after {
+    opacity: 1;
+}
+
+#pagina {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font: normal 125%/1.4 Georgia, 'Times New Roman', Times, serif;
+    min-height: 100%;
+    transition: color .2s, background-color .2s;
+}
+
+#conteudo {
+    margin: auto;
+    padding: 20px;
+}
+
+#pagina a {
+    color: var(--theme-color);
+}

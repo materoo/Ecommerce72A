@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;800&family=Signika+Negative:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(96, 47, 102);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    transition: 200ms;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: rgb(185, 92, 197);
+    transition: 200ms;
+}
+
+.links{
+    display: flex;
+    align-items:center;
+}
+
+.links a { 
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+    transition: 200ms;
+}
+
+.links a:hover{
+    transition: 200ms;
+    color: rgb(96, 47, 102);
+}
+
+.icons {
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.icons img:hover{
+    transform: translateY(-7px);
+    transition: 200ms;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    transition: 200ms;
+}
+
+.dark-mode header{
+    background-color: gray;
+}
+
+.dark-mode .links a:hover{
+    color: black;
+}
+
+
+.lampada{
+    cursor: pointer;
+}

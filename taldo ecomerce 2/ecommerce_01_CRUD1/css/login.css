@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;800&family=Signika+Negative:wght@500&display=swap');
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgb(96, 47, 102), rgb(185, 92, 197));
+    transition: 200ms;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    transition: 200ms;
+    margin-top: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .4s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: rgb(185, 92, 197);
+    font-size: 12px;
+}
+
+.login-box form input[type=submit] {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: rgb(185, 92, 197);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    transition: 200ms;
+}
+
+.login-box input[type=submit]:hover {
+    background: rgb(185, 92, 197);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(185, 92, 197), 0 0 20px rgb(185, 92, 197), 0 0 20px rgb(185, 92, 197), 0 0 20px rgb(185, 92, 197);
+}
+
+.login-box p {
+    color: #808080;
+    font-size: 16px;
+}
+
+.criar-conta {
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+
+.criar-conta:hover {
+    color: rgb(185, 92, 197);
+    transition: .2s;
+}
+
+.voltar {
+    position: relative;
+    display: inline;
+    float: right;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: rgb(185, 92, 197);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    transition: 200ms;
+}
+
+.voltar:hover {
+    color: #ffff;
+    background-color: rgb(185, 92, 197);
+    transition: .5s;
+    box-shadow: 0 0 5px rgb(185, 92, 197), 0 0 20px rgb(185, 92, 197), 0 0 20px rgb(185, 92, 197), 0 0 20px rgb(185, 92, 197);
+}
+
+.dark-mode {
+    background: linear-gradient(#000000, #434343);
+    transition: 200ms;
+}
+
+.dark-mode .voltar,
+.dark-mode form input[type=submit] {
+    color: gray;
+}
+
+.dark-mode .voltar:hover,
+.dark-mode form input[type=submit]:hover {
+    background-color: #808080;
+    color: white;
+    box-shadow: 0 0 5px #808080, 0 0 20px #808080, 0 0 20px #808080, 0 0 20px #808080;
+}
+
+.dark-mode .criar-conta:hover {
+    color: rgb(56, 56, 56);
+}
+
+.dark-mode .login-box .user-box input:focus~label,
+.dark-mode .login-box .user-box input:valid~label {
+    color: gray;
+}

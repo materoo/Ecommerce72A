@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;800&family=Signika+Negative:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    background: #f5e0a7;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+    transition: 0.2s;
+}
+
+.left h3 {
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.left span {
+    background: linear-gradient(45deg,#ff589e, #ffb800);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.btnSair {
+    text-decoration: none;
+    padding: 7px;
+    color: #000;
+    float: right;
+    margin-top: -45px;
+    margin-right: 40px;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.btnSair:hover{
+    background: #51b3ec;
+}
+
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    margin-top: 70px;
+    padding-top: 30px;
+    left: 0;
+    background: #ff5a96;
+    transition: 0.3s;
+}
+
+.sidebar .image{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.sidebar h2{
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+.sidebar a:hover{
+    background: #51b3ec;
+}
+
+.sidebar ion-icon{
+    padding-right: 10px;
+}
+
+label #btnSidebar{
+    z-index: 1;
+    position: fixed;
+    left: 120px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    margin: 5px 0;
+    transition: 0.2s;
+    transition-property: color;
+}
+
+label #btnSidebar:hover{
+    color: #51b3ec;
+}
+
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+#check{
+    display: none;
+}
+
+.content{
+    background: url(imagens/background_teste.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.3s;
+}
+
+#check:checked ~ .content{
+    margin-left: 60px;
+}
+
+.dark-mode .sidebar{
+    background-color: black;
+}
+
+.dark-mode .sidebar a{
+    color: #fff;
+}
+
+.dark-mode a:hover{
+    background-color: gray;
+}
+
+.dark-mode header{
+    background-color: rgb(37, 36, 36);
+}
+
+.dark-mode .btnSair{
+    color: #fff;
+}

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&family=Signika+Negative:wght@500&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Signika Negative', sans-serif;
+    background: linear-gradient(#000000, #434343);
+}
+
+.cadastro-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.cadastro-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cadastro-box .user-box {
+    position: relative;
+}
+
+.cadastro-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.cadastro-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.cadastro-box .user-box input:focus~label,
+.cadastro-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #ff0043;
+    font-size: 12px;
+}
+
+.cadastro-box form input[type=submit] {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ff0043;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+.cadastro-box input[type=submit]:hover {
+    background: #ff0043;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ff0043, 0 0 25px #ff0043, 0 0 50px #ff0043, 0 0 100px #ff0043;
+}
+
+.cadastro-box p {
+    color: #808080;
+}
+
+.criar-conta{
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+
+.criar-conta:hover{
+    color: #ff0043;
+    transition: .2s;
+}
+
+.voltar{
+    position: relative;
+    display: inline;
+    float: right;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ff0043;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+.voltar:hover{
+    color: #ffff;
+    background-color: #ff0043;
+    transition: .5s;
+    box-shadow: 0 0 5px #ff0043, 0 0 25px #ff0043, 0 0 50px #ff0043, 0 0 100px #ff0043;
+}
